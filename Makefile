@@ -90,16 +90,16 @@ all: ARGS_CC_32 := $(ARGS_CC_32) -std=c11
 all: ARGS_CC_64 := $(ARGS_CC_64) -std=c11
 all: $(_FILES)
 	
-	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the library archive"$(COLOR_NONE)" [ 32 bits ]: "$(COLOR_GRAY)"libc11.a"$(COLOR_NONE)
+	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the library archive"$(COLOR_NONE)" [ 32 bits ]: "$(COLOR_GRAY)"libc11$(EXT_LIB_STATIC)"$(COLOR_NONE)
 	@$(call XEOS_FUNC_LIB_STATIC_32,libc11,$^)
 	
-	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the library archive"$(COLOR_NONE)" [ 64 bits ]: "$(COLOR_GRAY)"libc11.a"$(COLOR_NONE)
+	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the library archive"$(COLOR_NONE)" [ 64 bits ]: "$(COLOR_GRAY)"libc11$(EXT_LIB_STATIC)"$(COLOR_NONE)
 	@$(call XEOS_FUNC_LIB_STATIC_64,libc11,$^)
 	
-	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the dynamic library"$(COLOR_NONE)" [ 32 bits ]: "$(COLOR_GRAY)"libc11.so"$(COLOR_NONE)
+	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the dynamic library"$(COLOR_NONE)" [ 32 bits ]: "$(COLOR_GRAY)"libc11$(EXT_LIB_DYNAMIC)"$(COLOR_NONE)
 	@$(call XEOS_FUNC_LIB_DYNAMIC_32,libc11,$^)
 	
-	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the dynamic library"$(COLOR_NONE)" [ 64 bits ]: "$(COLOR_GRAY)"libc11.so"$(COLOR_NONE)
+	@$(PRINT) $(PROMPT)$(COLOR_CYAN)"Generating the dynamic library"$(COLOR_NONE)" [ 64 bits ]: "$(COLOR_GRAY)"libc11$(EXT_LIB_DYNAMIC)"$(COLOR_NONE)
 	@$(call XEOS_FUNC_LIB_DYNAMIC_64,libc11,$^)
 
 # Cleans the build files

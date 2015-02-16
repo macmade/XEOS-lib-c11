@@ -61,7 +61,7 @@
 
 /* $Id$ */
 
-#include <threads.h>
+#include <c11/threads.h>
 #include <pthread.h>
 
 void mtx_destroy( mtx_t * mtx )

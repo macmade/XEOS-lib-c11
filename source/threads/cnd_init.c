@@ -61,7 +61,7 @@
 
 /* $Id$ */
 
-#include <threads.h>
+#include <c11/threads.h>
 #include <pthread.h>
 
 int cnd_init( cnd_t * cond )

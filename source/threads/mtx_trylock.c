@@ -61,7 +61,7 @@
 
 /* $Id$ */
 
-#include <threads.h>
+#include <c11/threads.h>
 #include <pthread.h>
 
 int mtx_trylock( mtx_t * mtx )

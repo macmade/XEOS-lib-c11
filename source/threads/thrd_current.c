@@ -61,7 +61,7 @@
 
 /* $Id$ */
 
-#include <threads.h>
+#include <c11/threads.h>
 #include <pthread.h>
 
 thrd_t thrd_current( void )

@@ -61,20 +61,17 @@
 
 /* $Id$ */
 
-#include <c11/threads.h>
-#include <pthread.h>
-#include <errno.h>
+#ifndef __XEOS_LIB_C11_TIME_H__
+#define __XEOS_LIB_C11_TIME_H__
 
-int mtx_timedlock( mtx_t * restrict mtx, const struct timespec * restrict ts )
-{
-    int res;
-    
-    res = pthread_mutex_timedlock( mtx, ts );
-    
-    if( res == ETIMEDOUT )
-    {
-        return thrd_timedout;
-    }
-    
-    return ( res == 0 ) ? thrd_success : thrd_error;
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include <system/types/struct_timespec.h>
+
+#ifdef __cplusplus
 }
+#endif
+
+#endif /* __XEOS_LIB_C11_TIME_H__ */

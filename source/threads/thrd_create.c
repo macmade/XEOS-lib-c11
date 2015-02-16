@@ -61,7 +61,7 @@
 
 /* $Id$ */
 
-#include <threads.h>
+#include <c11/threads.h>
 #include <pthread.h>
 
 int thrd_create( thrd_t * thr, thrd_start_t func, void * arg )

@@ -61,8 +61,8 @@
 
 /* $Id$ */
 
-#include <threads.h>
-#include <stdint.h>
+#include <c11/threads.h>
+#include <c11/stdint.h>
 
 extern _Noreturn void pthread_exit( void * );
 

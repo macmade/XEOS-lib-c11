@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		055EB2031A9235EF009ACFEC /* threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threads.h; sourceTree = "<group>"; };
 		055EB2041A9235EF009ACFEC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		055EB2051A9235EF009ACFEC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		055EB2081A9235EF009ACFEC /* call_once.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = call_once.c; sourceTree = "<group>"; };
@@ -35,13 +34,16 @@
 		055EB21E1A9235EF009ACFEC /* tss_delete.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tss_delete.c; sourceTree = "<group>"; };
 		055EB21F1A9235EF009ACFEC /* tss_get.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tss_get.c; sourceTree = "<group>"; };
 		055EB2201A9235EF009ACFEC /* tss_set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tss_set.c; sourceTree = "<group>"; };
+		055EB3BA1A9242F0009ACFEC /* stdint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdint.h; sourceTree = "<group>"; };
+		055EB3BB1A9242F0009ACFEC /* threads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threads.h; sourceTree = "<group>"; };
+		055EB3BC1A9242F0009ACFEC /* time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = time.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
 		055EB2021A9235EF009ACFEC /* include */ = {
 			isa = PBXGroup;
 			children = (
-				055EB2031A9235EF009ACFEC /* threads.h */,
+				055EB3B91A9242F0009ACFEC /* c11 */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -84,6 +86,16 @@
 				055EB2201A9235EF009ACFEC /* tss_set.c */,
 			);
 			path = threads;
+			sourceTree = "<group>";
+		};
+		055EB3B91A9242F0009ACFEC /* c11 */ = {
+			isa = PBXGroup;
+			children = (
+				055EB3BA1A9242F0009ACFEC /* stdint.h */,
+				055EB3BB1A9242F0009ACFEC /* threads.h */,
+				055EB3BC1A9242F0009ACFEC /* time.h */,
+			);
+			path = c11;
 			sourceTree = "<group>";
 		};
 		0595BA7A17AC11A70021435A = {

@@ -61,7 +61,7 @@
 
 /* $Id$ */
 
-#include <threads.h>
+#include <c11/threads.h>
 #include <time.h>
 
 int thrd_sleep( const struct timespec * duration, struct timespec * remaining )

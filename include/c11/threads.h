@@ -68,7 +68,7 @@
 extern "C" {
 #endif
 
-#include <time.h>
+#include <c11/time.h>
 
 #include <system/types/cnd_t.h>
 #include <system/types/thrd_t.h>

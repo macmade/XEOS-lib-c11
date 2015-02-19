@@ -60,14 +60,12 @@
 # $Id$
 
 include make/Config.mk
-
-ARGS_CC_STD := -std=c11
-	
 include make/Targets.mk
 
-PROMPT  := XEOS SOURCE LIB C11
-DEPS    := XEOS-lib-system XEOS-lib-pthread XEOS-lib-posix XEOS-lib-c99
-FILES   := $(call XEOS_FUNC_C_FILES,$(DIR_SRC)threads/)
+ARGS_CC_STD := -std=c11
+PROMPT      := XEOS SOURCE LIB C11
+DEPS        := XEOS-lib-system XEOS-lib-pthread XEOS-lib-posix XEOS-lib-c99
+FILES       := $(call XEOS_FUNC_C_FILES,$(DIR_SRC)threads/)
 
 all: obj-build
 	

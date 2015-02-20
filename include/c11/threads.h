@@ -61,8 +61,8 @@
 
 /* $Id$ */
 
-#ifndef __XEOS_LIB_C11_THREADS_H__
-#define __XEOS_LIB_C11_THREADS_H__
+#ifndef XEOS_LIB_C11_THREADS_H
+#define XEOS_LIB_C11_THREADS_H
 
 #ifdef __cplusplus
 extern "C" {
@@ -131,4 +131,4 @@ int    tss_set( tss_t key, void * val );
 }
 #endif
 
-#endif /* __XEOS_LIB_C11_THREADS_H__ */
+#endif /* XEOS_LIB_C11_THREADS_H */

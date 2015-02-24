@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #ifndef XEOS_LIB_C11_TIME_H
 #define XEOS_LIB_C11_TIME_H
 

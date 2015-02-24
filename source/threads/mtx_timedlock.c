@@ -59,8 +59,6 @@
  * OF THE POSSIBILITY OF SUCH DAMAGE.
  ******************************************************************************/
 
-/* $Id$ */
-
 #include <c11/threads.h>
 #include <pthread.h>
 #include <errno.h>
